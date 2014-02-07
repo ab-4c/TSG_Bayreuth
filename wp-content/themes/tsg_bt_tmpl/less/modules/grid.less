@@ -1,0 +1,166 @@
+//
+// Start grid.less
+// ----------------------------------------------------------------------------------------
+
+
+//
+// Fluid Images, Videos
+// ----------------------------------------------------------------------------------------
+
+figure {
+   margin: 0;
+}
+
+img,
+object,
+embed,
+video {
+   max-width: 100%;
+   _width: 100%;
+}
+
+img {
+   border: 0;
+   -ms-interpolation-mode: bicubic;
+   height: auto;
+}
+
+svg:not(:root) {
+   overflow: hidden;
+}
+
+
+
+//
+// Advanced Masonry Grid - Global Settings
+// ----------------------------------------------------------------------------------------
+
+#stream[data-columns]::before {
+   content: '1 .col12-s';
+   display: none;
+
+   @media (min-width: @screen-m) {
+      content: '2 .col6-s';
+   }
+
+   @media (min-width: @screen-l) {
+      content: '3 .col4-s';
+   }
+
+   @media (min-width: @screen-xl) {
+      content: '4 .col3-s';
+   }
+}
+
+
+
+//
+// Fluid Responsive Grid - Global Settings
+// ----------------------------------------------------------------------------------------
+
+.row-fluid {
+   .fix();
+
+   [class*="col"] {
+      .box-sizing();
+      float: left;
+   }
+
+   .gap {
+      padding-left: @gap/2;
+      padding-right: @gap/2;
+   }
+}
+
+.container {
+   padding: @gap/2;
+}
+
+
+//
+// Fluid Responsive Grid (0px - 480px)
+// ----------------------------------------------------------------------------------------
+
+.row-fluid {
+   .col1-s { .col-width(1); }
+   .col2-s { .col-width(2); }
+   .col3-s { .col-width(3); }
+   .col4-s { .col-width(4); }
+   .col5-s { .col-width(5); }
+   .col6-s { .col-width(6); }
+   .col7-s { .col-width(7); }
+   .col8-s { .col-width(8); }
+   .col9-s { .col-width(9); }
+   .col10-s { .col-width(10); }
+   .col11-s { .col-width(11); }
+   .col12-s { .col-width(12); }
+}
+
+
+
+//
+// Fluid Responsive Grid (481px - 768px)
+// ----------------------------------------------------------------------------------------
+
+@media (min-width: @screen-m) {
+   .row-fluid {
+      .col1-m { .col-width(1); }
+      .col2-m { .col-width(2); }
+      .col3-m { .col-width(3); }
+      .col4-m { .col-width(4); }
+      .col5-m { .col-width(5); }
+      .col6-m { .col-width(6); }
+      .col7-m { .col-width(7); }
+      .col8-m { .col-width(8); }
+      .col9-m { .col-width(9); }
+      .col10-m { .col-width(10); }
+      .col11-m { .col-width(11); }
+      .col12-m { .col-width(12); }
+   }
+}
+
+
+
+//
+// Fluid Responsive Grid (769px - 1100px)
+// ----------------------------------------------------------------------------------------
+
+@media (min-width: @screen-l) {
+   .row-fluid {
+      .col1-l { .col-width(1); }
+      .col2-l { .col-width(2); }
+      .col3-l { .col-width(3); }
+      .col4-l { .col-width(4); }
+      .col5-l { .col-width(5); }
+      .col6-l { .col-width(6); }
+      .col7-l { .col-width(7); }
+      .col8-l { .col-width(8); }
+      .col9-l { .col-width(9); }
+      .col10-l { .col-width(10); }
+      .col11-l { .col-width(11); }
+      .col12-l { .col-width(12); }
+   }
+}
+
+
+
+//
+// Fluid Responsive Grid (1100px - X)
+// ----------------------------------------------------------------------------------------
+
+@media (min-width: @screen-xl) {
+   .row-fluid {
+      .col1-xl { .col-width(1); }
+      .col2-xl { .col-width(2); }
+      .col3-xl { .col-width(3); }
+      .col4-xl { .col-width(4); }
+      .col5-xl { .col-width(5); }
+      .col6-xl { .col-width(6); }
+      .col7-xl { .col-width(7); }
+      .col8-xl { .col-width(8); }
+      .col9-xl { .col-width(9); }
+      .col10-xl { .col-width(10); }
+      .col11-xl { .col-width(11); }
+      .col12-xl { .col-width(12); }
+   }
+}

@@ -1,0 +1,71 @@
+//
+// Start settings.less
+// ----------------------------------------------------------------------------------------
+
+
+
+//
+// Graustufen
+// ----------------------------------------------------------------------------------------
+
+@black10: darken(#fff, 10%);
+@black20: darken(#fff, 20%);
+@black30: darken(#fff, 30%);
+@black40: darken(#fff, 40%);
+@black50: darken(#fff, 50%);
+@black60: darken(#fff, 60%);
+@black70: darken(#fff, 70%);
+@black80: darken(#fff, 80%);
+@black90: darken(#fff, 90%);
+
+
+
+//
+// Grundfarben
+// ----------------------------------------------------------------------------------------
+
+// Colorset
+@catia-blue:                #259eb1;
+
+
+@prime-color:				@catia-blue;
+
+@linkColor:                 @prime-color; // Prime Color for the most of color renderings
+@link-hover:				lighten(@prime-color, 5%);
+@link-active:				lighten(@prime-color, 10%);
+
+@body-bg:			        #fff;
+@text-color:				@black80;
+
+
+
+
+//
+// Abstände und Basisbreite
+// ----------------------------------------------------------------------------------------
+
+@gapValue: 20px; // Global gap
+
+@gap: unit((@gapValue / 10), rem); // DO NOT EDIT!
+@col-width: 60px; // Width of one grid column
+@cols: 12; // Number of columns
+
+@site-width: unit(((@cols * @col-width) + (@cols * @gapValue)), px); // Gesamtbreite berechnen
+@site-width-rem: unit((@site-width / 10), rem);
+
+
+@screen-m: 26.25em;   // 420px - Smartphone
+@screen-l: 45em;   // 720px - Tablets
+@screen-xl: 61.25em;  // 1100px - Desktop
+
+
+
+//
+// Typografie
+// ----------------------------------------------------------------------------------------
+
+// Reguläre Schrift
+@font-normal: 'Source Sans Pro', sans-serif;
+
+@base-font-size: 16; // Basic fontsize
+@base-line-height: 1.4em; // Basic line height

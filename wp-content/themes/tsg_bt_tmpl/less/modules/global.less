@@ -1,0 +1,171 @@
+//
+// Start global.less
+// ----------------------------------------------------------------------------------------
+
+
+
+//
+// <body> settings
+// ----------------------------------------------------------------------------------------
+
+body {
+   .selection();
+   .font-size();
+
+   font-family: @font-normal;
+   line-height: @base-line-height;
+   background-color: @black10;
+}
+
+
+
+//
+// Überschriften
+// ----------------------------------------------------------------------------------------
+
+.h1() {
+   .font-size(32);
+   line-height: 1em;
+   font-weight: bold;
+   margin: 0 0 @gap/2.3;
+}
+
+.h2() {
+   .font-size(25);
+   line-height: 1em;
+   font-weight: bold;
+   margin: 0 0 @gap/2.3;
+}
+
+.h3() {
+   .font-size(20);
+   line-height: 1em;
+   font-weight: bold;
+   margin: 0 0 @gap/2.3;
+}
+
+.h4() {
+   .font-size(18);
+   line-height: 1em;
+   font-weight: normal;
+   margin: 0 0 @gap/2.3;
+}
+
+.h5() {
+   .font-size(17);
+   line-height: 1em;
+   font-weight: normal;
+   margin: 0 0 @gap/2.3;
+}
+
+.h6() {
+   .font-size(14);
+   line-height: 1em;
+   font-weight: bold;
+   margin: 0 0 @gap/2.3;
+}
+
+// Zuweisen der Überschriften
+h1 { .h1; }
+h2 { .h2; }
+h3 { .h3; }
+h4 { .h4; }
+h5 { .h5; }
+h6 { .h6; }
+
+
+
+//
+// Links / Anker
+// ----------------------------------------------------------------------------------------
+
+a {
+   text-decoration: none;
+   color: @linkColor;
+
+   &:hover {
+      color: @link-hover;
+   }
+
+   &:hover,
+   &:active {
+      outline: 0;
+   }
+}
+
+
+
+//
+// Absätze
+// ----------------------------------------------------------------------------------------
+
+p {
+   margin: 0 0 @gap/2.3;
+}
+
+pre {
+   padding: @gap/2;
+   color: #000;
+   background-color: lighten(@prime-color, 40%);
+}
+
+//
+// Text Hervorhebungen
+// ----------------------------------------------------------------------------------------
+
+strong,b {
+    font-weight: bold;
+}
+
+i, em {
+   font-style: italic;
+   color: @black40;
+}
+
+
+
+//
+// Listenstile
+// ----------------------------------------------------------------------------------------
+
+ul, ol, dl {
+    margin: @gap/3 0;
+    list-style-position: inside;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: @gap/4;
+}
+
+
+
+//
+// Schaltflächen
+// ----------------------------------------------------------------------------------------
+
+.moreBtn {
+   background-color: @prime-color;
+   .border-radius();
+   .text-shadow(0px 1px 1px rgba(0,0,0,0.75));
+   padding: @gap/3 @gap/2;
+   color: #fff;
+   display: inline-block;
+
+   &:hover {
+      color: #fff;
+      background-color: @link-hover;
+      .vertical(@prime-color, darken(@prime-color, 7%));
+   }
+}
