@@ -9,57 +9,76 @@
 // ----------------------------------------------------------------------------------------
 
 #navigation {
-   .wrap;
-   background: @prime-color;
-   margin-top: @gap;
-   z-index: 100;
+  background: @prime-color;
+  z-index: 100;
+  position: relative;
 
-   li {
-      float: left;
-      position: relative;
+  li {
 
-      &:hover {
-         ul {
-            display: block;
-         }
-      }
-   }
+    float: left;
+    position: relative;
 
-   ul {
-      .no-list-styles;
-
+    &:hover {
       ul {
-         position: absolute;
-         display: none;
-         background-color: @link-active;
-
-         li {
-            float: none;
-
-            span {
-               &:hover {
-                  background-color: @link-hover;
-               }
-            }
-         }
+        display: block;
       }
-   }
+    }
+  }
 
-   span {
-      padding: @gap/2.5 @gap/2;
-      display: block;
-      color: #fff;
+  li:hover > a span {
+    background-color: white;
+    padding-bottom: 5px;
+    color: @compl-blue;
+    border-bottom: @compl-blue solid 3px;
+  }
 
-      &:hover {
-         background-color: @link-hover;
+  ul {
+    .no-list-styles;
+
+    ul {
+      position: absolute;
+      display: none;
+      width: 100%;
+      background-color: @link-active;
+
+      li {
+        float: none;
+        text-align: center;
+
+        span {
+          padding: 8px 10px;
+          display: inline-block;
+          width: 100%;
+          &:hover {
+            background-color: @link-hover;
+            color: #fff;
+            border-bottom: none;
+            padding-bottom: 8px;
+          }
+        }
       }
-   }
+    }
+  }
 
-   .current-menu-item {
-      span {
-         background-color: @link-active;
-      }
-   }
+  span {
+    padding: 8px 59px;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+
+    &:hover {
+      background-color: white;
+      padding-bottom: 5px;
+      color: @compl-blue;
+      border-bottom: @compl-blue solid 3px;
+    }
+  }
+
+  .current-menu-item {
+    span {
+      background-color: @link-active;
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {

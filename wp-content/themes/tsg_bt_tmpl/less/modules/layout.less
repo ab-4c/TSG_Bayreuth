@@ -7,7 +7,6 @@
    .box-sizing();
    .fix;
 
-   background-color: #fff;
    //padding: @gap;
 }
 
@@ -28,4 +27,128 @@
       top: 0;
       left: 0;
    }
+}
+
+//
+// Header
+// ----------------------------------------------------------------------------------------
+
+#header {
+  height: 90px;
+  background: url('../elements/header.jpg') no-repeat;
+  background-size: 100% 90px;
+}
+
+//
+// Top Teasersets
+// ----------------------------------------------------------------------------------------
+
+#top-teaserset {
+  padding: 10px 0 10px 0;
+}
+
+#breadcrumb {
+  ul {
+    list-style: none;
+    font-size: 12px;
+    padding-left: 10px;
+    li {
+      float: left;
+      padding-right: 10px;
+      &:first-child:before{
+        content: none;
+      }
+      &:before{
+        content: ">";
+        color: @compl-blue;
+        padding-right: 10px;
+      }
+      a {
+        color: @compl-blue;
+      }
+    }
+  }
+
+}
+
+
+#searchbar {
+  #submit {
+    input {
+      background: #eeeeee;
+      margin: 0;
+      border: 0;
+      float: left;
+    }
+  }
+  #bar {
+    input {
+      background: #eeeeee;
+      margin: 0;
+      border: 0;
+    }
+  }
+}
+
+//
+// News
+// ----------------------------------------------------------------------------------------
+
+#news {
+  background: #eeeeee;
+
+  #news-container {
+    padding-top: 10px;
+    p {
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+}
+
+//
+// Main Teasersets
+// ----------------------------------------------------------------------------------------
+
+#main-teaserset {
+  padding: 20px 0;
+  z-index: 60;
+  position: relative;
+}
+
+//
+// Footer
+// ----------------------------------------------------------------------------------------
+
+#footer {
+  background: #bfbfbf;
+  font-size: 13px;
+  a {
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    li {
+      a {
+        color: #5d5d5d;
+      }
+    }
+  }
+}
+
+#footer-nav {
+  background: @prime-color;
+
+  ul {
+    list-style: none;
+    li {
+      float: right;
+      padding-left: 25px;
+      padding-bottom: 10px;
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
