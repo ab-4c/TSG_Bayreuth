@@ -14,7 +14,7 @@
     <title>Voodookit - Pure</title>
 
     <!-- Insert CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Allura|Ruda:400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="css/voo.css" type="text/css" rel="stylesheet" media="all" />
 
 </head>
@@ -174,7 +174,7 @@
 
 <div id="top-teaserset" class="wrapper row-fluid">
 
-    <div id="breadcrumb" class="col12-s col10-l">
+    <div id="breadcrumb" class="col12-s col10-l container">
         <ul>
             <li>
                 <a href="#">
@@ -189,24 +189,24 @@
         </ul>
     </div>
 
-    <div id="searchbar" class="col12-s col2-l container">
+    <div id="searchbar" class="col12-s col2-l container row-fluid">
         <form action="/search/">
             <fieldset>
-               <div id="submit">
+               <div id="submit" class="col3-s">
                    <input type="submit" value="">
                </div>
-               <div id="bar">
+               <div id="bar" class="col9-s">
                    <input type="search">
                </div>
             </fieldset>
         </form>
     </div>
-    <div class="col6-s col3-l container">
-        <a href="#"><img src="elements/button_club.jpg" width="100%" height="100%"></a>
+    <div id="club" class="col6-s col3-l container orange-brd">
+        <a href="#"><img src="elements/button_club.jpg" width="220" height="220"><span>Club</span><div></div></a>
     </div>
 
-    <div class="col6-s col9-l container">
-        <a href="#"><img src="elements/button_turniere.jpg" width="100%" height="100%"></a>
+    <div id="turniere" class="col6-s col9-l container orange-brd">
+        <a href="#"><img src="elements/button_turniere_sw.jpg" width="700" height="220"><span>Turniere</span><div></div></a>
     </div>
 
 
@@ -218,8 +218,8 @@
 
         <div class="col12-s col6-l container">
 
-            <div class="col6-s col4-m">
-                <a href="#"><img src="images/news_bild_1.jpg" width="100%" height="100%"></a>
+            <div class="col6-s col4-m blue-brd">
+                <a href="#"><img src="images/ph_140x140.jpg" width="140" height="140"></a>
             </div>
             <div class="col12-s col8-m container">
                 <h3><a href="#">Neuigkeit</a></h3>
@@ -231,8 +231,8 @@
         </div>
         <div class="col12-s col6-l container">
 
-            <div class="col6-s col4-m">
-                <a href="#"><img src="images/news_bild_2.jpg" width="100%" height="100%"></a>
+            <div class="col6-s col4-m blue-brd">
+                <a href="#"><img src="images/ph_140x140.jpg" width="140" height="140"></a>
             </div>
             <div class="col12-s col8-m container">
                 <h3><a href="#">Neuigkeit</a></h3>
@@ -243,7 +243,11 @@
 
         </div>
         <div id="more-news" class="col12-s">
-            <p>"Mehr News Button"</p>
+            <a href="#">
+            <img src="elements/more_news_btn.jpg" width="35px" height="35px">
+                <div></div>
+            <p>Mehr News</p>
+            </a>
         </div>
     </div>
 
@@ -251,24 +255,24 @@
 
 <div id="main-teaserset" class="wrapper row-fluid">
 
-    <div class="col12-s col6-m container">
-        <a href="#"><img src="elements/button_latein.jpg" width="100%" height="100%"></a>
+    <div id="latein" class="col12-s col6-m container orange-brd">
+        <a href="#"><img src="images/ph_460x460.jpg" width="460" height="460"></a>
     </div>
-    <div class="col12-s col6-m container">
-        <a href="#"><img src="elements/button_standard.jpg" width="100%" height="100%"></a>
+    <div id="standard" class="col12-s col6-m container orange-brd">
+        <a href="#"><img src="images/ph_460x460.jpg" width="460" height="460"></a>
     </div>
 
-    <div class="col6-s col3-m container">
-        <a href="#"><img src="elements/button_mitglied.jpg" width="100%" height="100%"></a>
+    <div id="mitglied" class="col6-s col3-m container blue-brd">
+        <a href="#"><img src="images/ph_220x220.jpg" width="220" height="220"></a>
     </div>
-    <div class="col6-s col3-m container">
-        <a href="#"><img src="elements/button_shows.jpg" width="100%" height="100%"></a>
+    <div id="show" class="col6-s col3-m container blue-brd">
+        <a href="#"><img src="images/ph_220x220.jpg" width="220" height="220"></a>
     </div>
-    <div class="col6-s col3-m container">
-        <a href="#"><img src="elements/button_archive.jpg" width="100%" height="100%"></a>
+    <div id="archive" class="col6-s col3-m container blue-brd">
+        <a href="#"><img src="images/ph_220x220.jpg" width="220" height="220"></a>
     </div>
-    <div class="col6-s col3-m container">
-        <a href="#"><img src="elements/button_jahn.jpg" width="100%" height="100%"></a>
+    <div id="andere" class="col6-s col3-m container blue-brd">
+        <a href="#"><img src="images/ph_220x220.jpg" width="220" height="220"></a>
     </div>
 
 </div>
